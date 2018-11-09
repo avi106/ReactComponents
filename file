@@ -1,0 +1,16 @@
+
+return (
+      <div>
+        <Button style={{ margin: 30 }} className={classes}>
+          {this.formatCount()}
+        </Button>
+        <br /> <br />
+        <ButtonSize />;
+        <ul>
+          {this.state.tags.map(tag => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
